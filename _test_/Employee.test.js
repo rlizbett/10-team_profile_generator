@@ -1,3 +1,4 @@
+const { expect } = require("@jest/globals");
 const Employee = require("../lib/Employee");
 
 describe("Employee", () => {
@@ -7,7 +8,7 @@ describe("Employee", () => {
             expect(employee.name).toEqual("ben");
             expect(employee.id).toEqual(21);
             expect(employee.email).toEqual("bensandlin@gmail.com");
+            expect(employee.getRole()).toEqual("Employee");
         });
     });
 });
-//need to add employe role
