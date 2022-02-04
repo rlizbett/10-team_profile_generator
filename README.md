@@ -1,18 +1,24 @@
 # 10-team_profile_generator
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
-WHEN I start the application
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-WHEN I select the intern option
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+## Table of Contents
+* [Description](#description)
+* [License](#license)
+* [Tests](#tests)
+* [Dependencies](#dependencies)
+* [Usage](#usage)
+* [Contribution](#contributions)
+* [Questions](#questions)
+
+ ## Description 
+    The purpose of this assignment was to build a command-line application that allows employee information to be gathered then generate an HTML page that displays each persons information. The command-line starts with all the manager questions then asked if they would like to add an Enginner, Intern, or if they do not wish to add anymore employees. Once the manager has completed adding their employees an HTML webpage is generated, which dispays cards with their teams for quick access to their information.
+## License 
+    MIT
+## Tests 
+    npm run test
+## Dependencies 
+     npm install inquirer, npm i jest
+## Usage 
+    N/A
+## Contributions 
+    N/A
+## Questions
+    Connect with me on Github: hhttps://github.com/rlizbett  or email me rlizbett@gmail.com for any other questions .
