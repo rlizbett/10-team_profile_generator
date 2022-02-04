@@ -94,7 +94,7 @@ function employeeQuestions() {
                 internQuestions();
             }
             else {
-                fs.writeFile('./src/htmlDemo.html', pageHTML(employeeMembers), (err) =>
+                fs.writeFile('./team.html', pageHTML(employeeMembers), (err) =>
                     err ? console.log(err) : console.log('responces recorded to index.html'))
                 console.log(employeeMembers);
             }
