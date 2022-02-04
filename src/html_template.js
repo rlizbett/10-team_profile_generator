@@ -54,7 +54,7 @@ const managerCard = (Manager) => {
         <h4>${Manager.name}</h4>
     </header>
     <ul>
-        <li>${Manager.ManagerId}</li>
+        <li>Id: ${Manager.id}</li>
         <li>Email:<a href="gmail.com">${Manager.email}</a></li>
         <li>Office Number:${Manager.getofficeNum()}</li>
     </ul>
@@ -65,12 +65,12 @@ const engineerCard = (Engineer) => {
     return `
     <section class="card">
     <header>${Engineer.getRole()}
-    <h4>${Engineer.EngineerName}</h4>
+    <h4>${Engineer.name}</h4>
     </header> 
     <ul>
-        <li>${Engineer.EngineerId}</li>
-        <li>Email: <a href="gmail.com">${Engineer.EngineerEmail}</a></li>
-        <li>Github:<a href="SandlinBen">${Engineer.EngineerGithub}</a></li>
+        <li>Id: ${Engineer.id}</li>
+        <li>Email: <a href="gmail.com">${Engineer.email}</a></li>
+        <li>Github:<a href="SandlinBen">${Engineer.getGithub()}</a></li>
     </ul>
 </section>`
 };
@@ -79,11 +79,11 @@ const internCard = (Intern) => {
     return `
     <section class="card">
     <header>${Intern.getRole()}
-     <h4>${Intern.InternName}</h4></header>
+     <h4>${Intern.name}</h4></header>
     <ul>
-        <li>${Intern.InternId}</li>
-        <li>Email:<a href="gmail.com">${Intern.InternEmail}</a></li>
-        <li>School:${Intern.InternSchool}</li>
+        <li>Id: ${Intern.id}</li>
+        <li>Email:<a href="gmail.com">${Intern.email}</a></li>
+        <li>School:${Intern.getSchool()}</li>
     </ul>
 </section>`
 }

@@ -35,7 +35,7 @@ function managerQuestions() {
     ])
         .then((response) => {
             console.log(response);
-            employeeMembers.push(new Manager(response.MangerName, response.ManagerId, response.MangerEmail, response.MangerOffNum));
+            employeeMembers.push(new Manager(response.ManagerName, response.ManagerId, response.ManagerEmail, response.ManagerOffNum));
             employeeQuestions();
         });
 
@@ -96,7 +96,7 @@ function employeeQuestions() {
             else if (response.EmployeeChoice == "I dont wish to add more Employees") { 
                 console.log();
                 fs.writeFile('./team.html', pageHTML(employeeMembers), (err) =>
-                    err ? console.log(err) : console.log('responces recorded to index.html'))
+                    err ? console.log(err) : console.log('responces recorded to team.html'))
                 console.log(employeeMembers);
             }
         });
