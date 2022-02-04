@@ -49,11 +49,11 @@ const managerCard = (Manager) => {
     <section class="card">
     <header>
         ${Manager.getRole()}
-        <h4>${Manager.getName()}</h4>
+        <h4>${Manager.name}</h4>
     </header>
     <ul>
-        <li>${Manager.getId()}</li>
-        <li>Email:<a href="gmail.com">${Manager.getEmail()}</a></li>
+        <li>${Manager.id}</li>
+        <li>Email:<a href="gmail.com">${Manager.email}</a></li>
         <li>Office Number:${Manager.getofficeNum()}</li>
     </ul>
 </section>`
@@ -73,11 +73,11 @@ const engineerCard = (Engineer) => {
 </section>`
 };
  
-const internCrad = (Intern) => {
+const internCard = (Intern) => {
     return `
     <section class="card">
-    <header>${Inter.getRole()}
-     <h4>${Intern.getName}</h4></header>
+    <header>${Intern.getRole()}
+     <h4>${Intern.getName()}</h4></header>
     <ul>
         <li>${Intern.getId()}</li>
         <li>Email:<a href="gmail.com">${Intern.getEmail()}</a></li>
