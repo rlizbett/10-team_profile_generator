@@ -77,7 +77,7 @@ function employeeQuestions() {
         {
             type: "list",
             message: "Which employee would you like to add?",
-            name: "EployeeChoice",
+            name: "EmployeeChoice",
             choices: [
                 "Engineer",
                 "Intern",
