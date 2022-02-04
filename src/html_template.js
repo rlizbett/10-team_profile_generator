@@ -51,12 +51,12 @@ const managerCard = (Manager) => {
     <section class="card">
     <header>
         ${Manager.getRole()}
-        <h4>${Manager.ManagerName}</h4>
+        <h4>${Manager.name}</h4>
     </header>
     <ul>
         <li>${Manager.ManagerId}</li>
-        <li>Email:<a href="gmail.com">${Manager.ManagerEmail}</a></li>
-        <li>Office Number:${Manager.ManagerOffNum}</li>
+        <li>Email:<a href="gmail.com">${Manager.email}</a></li>
+        <li>Office Number:${Manager.getofficeNum()}</li>
     </ul>
 </section>`
 };

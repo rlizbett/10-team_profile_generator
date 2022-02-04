@@ -67,7 +67,7 @@ function engineerQuestions() {
     ])
         .then((response) => {
             console.log(response);
-            employeeMembers.push(new Engineer(response));
+            employeeMembers.push(new Engineer(response.EngineerName, response.EngineerId, response.EngineerEmail, response.EngineerGithub));
             employeeQuestions();
         });
 };
@@ -128,7 +128,7 @@ function internQuestions() {
     ])
     .then((response) => {
         console.log(response);
-        employeeMembers.push(new Intern(response));
+        employeeMembers.push(new Intern(response.InternName, response.InternId, response.InternEmail, response.InternSchool));
         employeeQuestions();
     });
 };
