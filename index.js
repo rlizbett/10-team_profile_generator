@@ -30,12 +30,12 @@ function managerQuestions() {
         {
             type: "input",
             message: "What is the Manager's office number?",
-            name: "ManagersOffNum",
+            name: "ManagerOffNum",
         },
     ])
         .then((response) => {
             console.log(response);
-            employeeMembers.push(new Manager(response));
+            employeeMembers.push(new Manager(response.MangerName, response.ManagerId, response.MangerEmail, response.MangerOffNum));
             employeeQuestions();
         });
 

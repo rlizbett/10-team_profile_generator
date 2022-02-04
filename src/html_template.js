@@ -1,3 +1,5 @@
+const Manager = require("../lib/Manager");
+
 const pageHTML = function (employeeMembers) {
     return `
     <!DOCTYPE html>
@@ -44,17 +46,17 @@ const employeeList = (employeeArray) => {
     return str;
 }
 
-const managerCard = (Manager) => {
+const managerCard = (Manager) => { 
     return `
     <section class="card">
     <header>
         ${Manager.getRole()}
-        <h4>${Manager.name}</h4>
+        <h4>${Manager.ManagerName}</h4>
     </header>
     <ul>
-        <li>${Manager.id}</li>
-        <li>Email:<a href="gmail.com">${Manager.email}</a></li>
-        <li>Office Number:${Manager.getofficeNum()}</li>
+        <li>${Manager.ManagerId}</li>
+        <li>Email:<a href="gmail.com">${Manager.ManagerEmail}</a></li>
+        <li>Office Number:${Manager.ManagerOffNum}</li>
     </ul>
 </section>`
 };
@@ -63,12 +65,12 @@ const engineerCard = (Engineer) => {
     return `
     <section class="card">
     <header>${Engineer.getRole()}
-    <h4>${Engineer.getName()}</h4>
+    <h4>${Engineer.EngineerName}</h4>
     </header> 
     <ul>
-        <li>${Engineer.getId()}</li>
-        <li>Email: <a href="gmail.com">${Engineer.getEmail()}</a></li>
-        <li>Github:<a href="SandlinBen">${Engineer.getGithub()}</a></li>
+        <li>${Engineer.EngineerId}</li>
+        <li>Email: <a href="gmail.com">${Engineer.EngineerEmail}</a></li>
+        <li>Github:<a href="SandlinBen">${Engineer.EngineerGithub}</a></li>
     </ul>
 </section>`
 };
@@ -77,11 +79,11 @@ const internCard = (Intern) => {
     return `
     <section class="card">
     <header>${Intern.getRole()}
-     <h4>${Intern.getName()}</h4></header>
+     <h4>${Intern.InternName}</h4></header>
     <ul>
-        <li>${Intern.getId()}</li>
-        <li>Email:<a href="gmail.com">${Intern.getEmail()}</a></li>
-        <li>School:${Intern.getSchool()}</li>
+        <li>${Intern.InternId}</li>
+        <li>Email:<a href="gmail.com">${Intern.InternEmail}</a></li>
+        <li>School:${Intern.InternSchool}</li>
     </ul>
 </section>`
 }
