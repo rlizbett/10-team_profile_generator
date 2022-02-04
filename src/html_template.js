@@ -7,7 +7,7 @@ const pageHTML = function (employeeMembers) {
     <title>My Team Demo</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./styleDemo.css" />
+    <link rel="stylesheet" type="text/css" href="./dist/style.css" />
 </head>
 
 <body>
@@ -63,7 +63,7 @@ const engineerCard = (Engineer) => {
     return `
     <section class="card">
     <header>${Engineer.getRole()}
-    <h4>${Enginer.getName()}</h4>
+    <h4>${Engineer.getName()}</h4>
     </header> 
     <ul>
         <li>${Engineer.getId()}</li>

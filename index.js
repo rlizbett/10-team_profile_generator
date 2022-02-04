@@ -93,7 +93,8 @@ function employeeQuestions() {
             else if (response.EmployeeChoice == "Intern") {
                 internQuestions();
             }
-            else {
+            else if (response.EmployeeChoice == "I dont wish to add more Employees") { 
+                console.log();
                 fs.writeFile('./team.html', pageHTML(employeeMembers), (err) =>
                     err ? console.log(err) : console.log('responces recorded to index.html'))
                 console.log(employeeMembers);
@@ -124,6 +125,11 @@ function internQuestions() {
             name: "InternSchool",
         },
 
-    ]);
+    ])
+    .then((response) => {
+        console.log(response);
+        employeeMembers.push(new Intern(response));
+        employeeQuestions();
+    });
 };
 managerQuestions();
